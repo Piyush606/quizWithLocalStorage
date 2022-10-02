@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <header class="d-flex justify-content-between head text-white pt-3">
+        <a class="ml-4" id=leaderboard onclick="viewHighscore()">View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+        </i></a> 
+        <p class="mr-4">Time: <span id="countdown"></span></p>
+    </header>
+    <main class="main d-flex flex-column justify-content-center">
+        <div class="container">
+            <div class="box shadow p-5">
+                <div class="">
+                    <h5 class=""><b id="box-title">Coding Quiz Challenge</b></h5><br>
+                    <div id="box-desc">
+                        <p>Try to answer to following code-related questions within the time limit.</p>
+                        <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                        <button class="btn btn-success link" id="start" onclick="onStart(0); startTimer();">Start Quiz</button>
+                    </div>
+                    <div id="err">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

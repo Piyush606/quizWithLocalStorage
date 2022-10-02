@@ -1,0 +1,15 @@
+.head{
+    background-color: #218380;
+}
+
+.main{
+    height: 80vh;
+}
+
+.link{
+    background-color: #218380 !important;
+}
+
+.box{
+    border-radius: 30px;
+}
